@@ -13,15 +13,15 @@ NLINE=0
 # Verify if the arg numbers is correct
 if [ $# -ne 2 ]
 then
-	echo "Args rules not is correct!\nUsage: $0 <directory> <search_string>"
+	echo "Usage: $0 <directory> <search_string>"
 	exit 1
 fi
 
 # Verify if the directory path is valid
 if [ ! -d "$1" ]
 then
-	echo "The directory "$1" not exist\nPlease insert a valid directory path"
-	exit
+	echo "The directory "$1" not exist"
+	exit 1
 fi
 
 FILEDIR=$1
