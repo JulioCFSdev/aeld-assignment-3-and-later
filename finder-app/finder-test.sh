@@ -3,10 +3,6 @@
 # Tester script for assignment 1 and assignment 2
 # Author: Siddhant Jajoo
 
-make clean
-
-make writer
-
 set -e
 set -u
 
